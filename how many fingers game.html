@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>Javascript</title>
+
+</head>
+<body>
+<h4>Guess How many Fingers...</h4>
+
+<p><input type="text" id="numberentered">
+<button id="enter">Enter</button></p>
+<script type="text/javascript">
+var randomNumber = Math.random();
+randomNumber=randomNumber * 6;
+randomNumber = Math.floor(randomNumber);
+document.getElementById("enter").onclick=function()
+{
+if (document.getElementById("numberentered").value == randomNumber)
+{
+alert("	You got it!!");
+}
+else{
+alert("Wrong!! it was " + randomNumber);
+}
+}
+
+
+
+
+
+</script>
+
+</body>
+
+
+
+
+
+
+
+
+</html>
